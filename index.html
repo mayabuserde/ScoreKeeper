@@ -9,13 +9,14 @@
 </head>
 
 <body>
-    <main>
-        <figure>
-            <img src="" alt="ping pong bat">
+    <main class="container">
+        <figure class="banner">
+            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3784&amp;q=80"
+                alt="ping pong bat">
             <figcaption>Ping Pong Score Keeper</figcaption>
         </figure>
         <section>
-            <h1>0 to 0</h1>
+            <h1 id="scoreCounter"><span id="player1Score">0</span> to <span id="player2Score">0</span></h1>
             <p>Use the buttons below to keep score.</p>
             <label for="maxScore">Playing to </label>
             <select name="maxScore" id="maxScore">
@@ -25,9 +26,9 @@
                 <option value="8">8</option>
             </select>
             <div class="buttons">
-                <button>+1 Player One</button>
-                <button>+1 Player Two</button>
-                <button>Reset</button>
+                <button id="player1">+1 Player One</button>
+                <button id="player2">+1 Player Two</button>
+                <button id="reset">Reset</button>
             </div>
         </section>
 
