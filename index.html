@@ -5,34 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping Pong Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"> </script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="container">
-        <figure class="banner">
-            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3784&amp;q=80"
-                alt="ping pong bat">
-            <figcaption>Ping Pong Score Keeper</figcaption>
-        </figure>
-        <section>
-            <h1 id="scoreCounter"><span id="player1Score">0</span> to <span id="player2Score">0</span></h1>
-            <p>Use the buttons below to keep score.</p>
-            <label for="maxScore">Playing to </label>
-            <select name="maxScore" id="maxScore">
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-            <div class="buttons">
-                <button id="player1">+1 Player One</button>
-                <button id="player2">+1 Player Two</button>
-                <button id="reset">Reset</button>
-            </div>
-        </section>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <section class="section">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3784&amp;q=80"
+                                    alt="ping pong bat">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">Ping Pong Score Keeper</p>
 
-    </main>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1" id="scoreCounter"><span id="displayPlayer1">0</span> to <span
+                                        id="displayPlayer2">0</span></h1>
+                                <p class=" subtitle">Use the buttons below to keep score.</p>
+
+                                <div class="field"><label class="label is-large is-inline" for="maxScore">Playing to
+                                    </label>
+                                    <div class="select is-rounded">
+
+                                        <select name="maxScore" id="maxScore">
+
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field"><label for="" class="label">Enter your name </label>
+                                    <div class="control has-icons-left">
+                                        <input type="text" class="input is-primary" placeholder="Player 1"
+                                            id="namePlayer1">
+                                        <span class="icon is-small is-left"><i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input type="text" class="input is-info" placeholder="Player 2"
+                                            id="namePlayer2">
+                                        <span class="icon is-small is-left"><i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button class="button is-primary is-large card-footer-item" id="buttonPlayer1">+1 Player
+                                One</button>
+                            <button class="button is-info is-large card-footer-item" id="buttonPlayer2">+1 Player
+                                Two</button>
+                            <button class="button is-danger is-large card-footer-item" id="reset">Reset</button>
+                        </footer>
+
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
 
 
 
